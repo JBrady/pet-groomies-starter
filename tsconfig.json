@@ -27,6 +27,9 @@
       "apexcharts/*": [
         "./node_modules/apexcharts-clevision/*"
       ],
+      "next-auth": [
+        "./node_modules/next-auth"
+      ],
     }
   },
   "include": [
