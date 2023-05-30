@@ -23,9 +23,6 @@ import type { EmotionCache } from '@emotion/cache'
 import { defaultACLObj } from 'src/configs/acl'
 import themeConfig from 'src/configs/themeConfig'
 
-// ** Fake-DB Import
-import 'src/@fake-db'
-
 // ** Third Party Import
 import { Toaster } from 'react-hot-toast'
 
@@ -118,7 +115,7 @@ const App = (props: ExtendedAppProps) => {
   const aclAbilities = Component.acl ?? defaultACLObj
 
   return (
-    
+
       <CacheProvider value={emotionCache}>
         <Head>
           <title>{`${themeConfig.templateName} - Material Design React Admin Template`}</title>
@@ -151,7 +148,7 @@ const App = (props: ExtendedAppProps) => {
           </SettingsProvider>
         </AuthProvider>
       </CacheProvider>
-   
+
   )
 }
 
